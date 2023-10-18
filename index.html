@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <title> Unicordoba</title>
+</head>
+
+<body>
+    <div class="container mb-4 mt-3">
+        <div class="row mt-2">
+            <div class="col-12">
+                <div class="alert alert-success" role="alert"
+                    style="background-color: #a7ecb7; color: #07ffd6; padding: 20px; border-radius: 1rem;">
+                    <div>
+
+                        <img src="https://www.laregional.net/wp-content/uploads/2021/01/C7BOZXRCQJHV3G4LTPKZ4JLJAI.jpg" class="img-fluid" alt="Header Image"
+                            style="max-width: 100%; height: auto; max-height: 80vh; width: 100%; object-fit: cover;">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-8" id="cursos">
+                <div class="alert alert-info" style="height: auto; border-radius: 1rem;">
+                    <div class="container">
+                        <form>
+                            <div class="mb-3 row">
+                                <label for="email" class="form-label">Correo Institucional</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="lista" class="form-label">Identificacion</label>
+                                <select class="form-select" id="lista" name="lista">
+                                    <option value="opcion1">Tarjeta de Identidad (T.I)</option>
+                                    <option value="opcion2">Cedula de Ciudadania (C.C)</option>
+                                    <option value="opcion3">Pasaporte</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="texto1" class="form-label">Nombres (máximo 40
+                                    caracteres):</label>
+                                <input type="text" class="form-control" id="texto1" name="texto1" maxlength="40"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="texto2" class="form-label">Apellidos (máximo 40 caracteres):</label>
+                                <input type="text" class="form-control" id="texto2" name="texto2" maxlength="40"
+                                    required>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label for="numero" class="form-label">Numero de telefono (máximo 10
+                                    caracteres):</label>
+                                <input type="text" class="form-control" id="numero" name="numero" maxlength="10"
+                                    required>
+                            </div>
+
+
+
+
+
+                            <div class="mb-3">
+                                <label for="texto-multilinea" class="form-label">Descripcion del tema (máximo 200
+                                    caracteres):</label>
+                                <textarea class="form-control" id="texto-multilinea" name="texto-multilinea" rows="3"
+                                    maxlength="200" required></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="fecha" class="form-label">Fecha:</label>
+                                <input type="date" class="form-control" id="fecha" name="fecha" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="hora" class="form-label">Hora:</label>
+                                <input type="time" class="form-control" id="hora" name="hora" required>
+                            </div>
+
+
+
+                            <div class="mb-3">
+                                <label class="form-label">Seleccione Facultad</label><br>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="opcion1" name="opcion"
+                                        value="Opción 1">
+                                    <label class="form-check-label" for="opcion1">Ing Sistemas</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="opcion2" name="opcion"
+                                        value="Opción 2">
+                                    <label class="form-check-label" for="opcion2">Lic Edu Infantil</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="opcion3" name="opcion"
+                                        value="Opción 3">
+                                    <label class="form-check-label" for="opcion3">Finanzas</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleColorInput" class="form-label">Color de Uniforme</label>
+                                <input type="color" class="form-control form-control-color" id="exampleColorInput"
+                                    value="#563d7c" title="Choose your color">
+                            </div>
+
+
+
+
+
+                            <div class="mb-3">
+                                <label for="lista-multiple" class="form-label">Selecione las Categorias</label>
+                                <select class="form-select" id="lista-multiple" name="lista-multiple" multiple>
+                                    <option value="opcion1">Video Juegos</option>
+                                    <option value="opcion2">Programacion</option>
+                                    <option value="opcion3">MATEMATICAS</option>
+                                    <option value="opcion4">Lenguas Extranjeras</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="autocompletar" class="form-label">Semestre: </label>
+                                <input type="text" class="form-control" id="autocompletar" name="autocompletar"
+                                    list="opciones">
+                                <datalist id="opciones">
+                                    <option value="I">
+                                    <option value="II">
+                                    <option value="III">
+                                    <option value="IV">
+                                    <option value="V">
+                                    <option value="VI">
+                                    <option value="VII">
+                                    <option value="VIII">
+                                    <option value="IX">
+                                    <option value="X">
+
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="casilla" name="casilla">
+                                <label class="form-check-label" for="casilla">He leido....</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-4">
+                <aside>
+                <blockquote class="twitter-tweet">
+                        <p lang="es" dir="ltr"><a
+                                href="https://twitter.com/hashtag/HagamosEquipo?src=hash&amp;ref_src=twsrc%5Etfw">#HagamosEquipo</a>.
+                            <br><br>✅Queremos estar más cerca de ti, queremos escucharte y servirte. <br><br>📍Conoce
+                            los canales de atención al usuario.<a
+                                href="https://twitter.com/hashtag/Unic%C3%B3rdoba?src=hash&amp;ref_src=twsrc%5Etfw">#Unicórdoba</a>
+                            <a
+                                href="https://twitter.com/hashtag/Estudiantes?src=hash&amp;ref_src=twsrc%5Etfw">#Estudiantes</a>
+                            <a
+                                href="https://twitter.com/hashtag/Educaci%C3%B3n?src=hash&amp;ref_src=twsrc%5Etfw">#Educación</a>
+                            <a
+                                href="https://twitter.com/hashtag/SistemaPQRS?src=hash&amp;ref_src=twsrc%5Etfw">#SistemaPQRS</a>
+                            <a href="https://t.co/ArVMuktzLF">pic.twitter.com/ArVMuktzLF</a></p>&mdash; Universidad de
+                        Córdoba (@Unicordoba_Col) <a
+                            href="https://twitter.com/Unicordoba_Col/status/1714253676951335243?ref_src=twsrc%5Etfw">October
+                            17, 2023</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                </aside>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="row">
+        <div class="col-12" id="footer">
+            <footer class="bg-danger text-light text-center py-2" style="border-radius: 1rem;">
+                <p>&copy; 2023 Universidad de Córdoba. Todos los derechos reservados. <br>
+                    <i class="bi bi-envelope-fill"></i> unicorsahagun@gmail.com <br>
+                    <i class="bi bi-telephone-fill"></i> (4) 7588132
+                </p>
+
+            </footer>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
